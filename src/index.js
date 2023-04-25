@@ -1,5 +1,11 @@
 import React from 'react';
-import { ReactDOM } from 'react-dom';
+import  ReactDOM  from 'react-dom';
 import App from './components/App';
+import './styles/global.scss';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(
+    <React.StrictMode>
+      <App/>
+    </React.StrictMode>,
+    document.getElementById('app')
+  );
